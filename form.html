@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+
+<nav>
+    <ul>
+        <li><a href=>Особиста сторінка Лавренюка Богдана</a></li>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="dog.html">Про мене</a></li>
+        <li><a href="pract.html">Практичні роботи</a></li>
+        <li><a href="cat.html">Лабораторні заняття</a></li>
+        <li><a href="form.html">Форма</a></li>
+    </ul>
+</nav>
+
+<body>
+    <h1>Реєстрація</h1>
+    <form action="посилання_на_обработчик.php" method="post">
+        <label for="username">Ім'я користувача:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="surname">Прізвище користувача:</label>
+        <input type="text" id="surname" name="surname" required><br><br>
+
+        <label for="email">Електронна адреса користувача:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Підтвердити пароль:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        <input type="submit" value="Зареєструватися">
+    </form>
+</body>
+</html>
