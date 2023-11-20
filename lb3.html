@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .left-column {
+            flex: 1;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+             justify-content: space-between; 
+	    max-width: 200px;
+        }
+
+        .right-column {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .menu-button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu-button:hover {
+            background-color: #555;
+        }
+
+        .search-input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .add-video-button {
+            padding: 10px 20px;
+            background-color: #E62117;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .categories {
+            text-align: left;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .category {
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        .category:hover {
+            background-color: #555;
+        }
+
+        .center-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+.video {
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: calc(30% - 20px); 
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+.video iframe {
+    width: 100%; 
+    height: 100%; 
+    margin-left: -8px; 
+    margin-right: -8px; 
+}
+    </style>
+</head>
+<body>
+    <div class="left-column">
+	<p>Copy YouTube</p>
+        <div class="menu-button">Головна</div>
+        <div class="menu-button">YouTube Shorts</div>
+        <div class="menu-button">Підписки</div>
+        <div class="menu-button">YouTube Музика</div>
+        <p>Ви</p>
+        <div class="menu-button">Ваш канал</div>
+        <div class="menu-button">Історія</div>
+        <div class="menu-button">Ваші відео</div>
+        <div class="menu-button">Переглянути пізніше</div>
+        <div class="menu-button">Завантаження</div>
+        <div class="menu-button">Показати більше</div>
+        <p>Підписки</p>
+	<div class="menu-button">error</div>
+	<div class="menu-button">error</div>
+	<div class="menu-button">error</div>
+
+    </div>
+    <div class="right-column">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Пошук">
+            <button class="add-video-button">Додати відео</button>
+        </div>
+        <div class="categories">
+            <div class="category">Усі</div>
+            <div class="category">Ігри</div>
+            <div class="category">Музика</div>
+            <div class="category">Пряма трансляція</div>
+            <div class="category">Новини</div>
+        </div>
+        <div class="center-content">
+            <div class="video">
+		<iframe width="360" height="270" src="https://www.youtube.com/embed/FPIii3bb7Rw?si=W8ASkg3XZuQOzl9-" ></iframe>
+            </div>
+            <div class="video">
+		<iframe width="360" height="270" src="https://www.youtube.com/embed/euZliUkeOFo?si=tZ7PHCuqDyetKtFT" ></iframe>
+            </div>            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/po_FZ7sLEUU?si=nIng5WxeC-wrwhUZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>            <div class="video">
+		
+        </div>
+    </div>
+</body>
+</html>

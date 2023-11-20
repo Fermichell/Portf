@@ -1,0 +1,116 @@
+#container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid rgb(121, 117, 117);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#weekly-plan
+{
+   display: grid;
+    align-items: end;
+    grid-column: 1 / 4; 
+}
+
+#weekly-plan p{ margin: 0;}
+
+h1 {
+    display: grid;
+    grid-column: 1 /2; 
+    grid-row: 2 / 3;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0 10px;
+    margin: 0;
+}
+
+#week-of {
+    display: grid;
+    grid-column: 2 / 2; 
+    grid-row: 2 / 3;
+    justify-content: start;
+}
+
+#healthy-habit {
+    display: grid;
+    grid-column: 3 / 3; 
+    grid-row: 2 / 3; 
+    justify-content: end;
+}
+
+#rocked-it {
+    display: grid;
+    grid-column: 5 / 5;
+    grid-row: 1 / 2;
+    justify-content: end;
+}
+
+#room-for-improvement {
+    display: grid;
+    grid-column: 5 / 5;
+    grid-row: 2 / 3; 
+    justify-content: end;
+}
+
+
+
+#todo h5{
+    margin: 0;
+}
+#to_do{
+    display: grid;
+    border: 1px solid black;
+    grid-column: 2 / 1;
+}
+
+#to_do h2 {
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 20px;
+}
+#to_do input[type="checkbox"] { width: 10%;  }
+#to_do input[type="text"] { width: 85%; }
+
+#to_do input{
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#todo{ text-align: right;}
+
+#nextweek,#top3goals,#everythingelse { padding: 0 10px;}
+
+#top3goals h2{margin: 0;}
+
+#weekdays {
+    display: grid;
+    grid-column: 2 / 4;
+    border: 1px solid black;
+    grid-template-columns: repeat(3, 33.4%);
+    grid-template-rows: repeat(3, 50%); 
+}
+
+
+#monday, #tuesday, #wednesday, #thursday, #friday, #saturday, #sunday {
+
+    border: 1px solid black;
+    padding: 0 30;
+}
+
+#monday h3, #tuesday h3, #wednesday h3, #thursday h3, #friday h3, #saturday h3, #sunday h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#wednesday { grid-column: 3 / 4; grid-row: 1 / 2; }
+
+#thursday { grid-column: 1 / 2; grid-row: 2 / 1; }
+
+#friday { grid-column: 2 / 3; grid-row: 2 / 1; }
+
+#saturday { grid-column: 3 / 4; grid-row: 2 / 2; height: 50%;}
+
+#sunday { grid-column: 3/ 4; grid-row: 2/ 2;  height: 50%;}
